@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROX — The Sound of the Next Era</title>
+    <style>
+        :root { --space-black: #05050a; --neon-blue: #00d2ff; --neon-purple: #9d4edd; --text-gray: #a0a0b8; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--space-black); color: #ffffff; overflow-x: hidden; background-image: radial-gradient(circle at 50% 50%, #101025 0%, #05050a 100%); }
+        header { position: fixed; top: 0; width: 100%; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; background: rgba(5, 5, 10, 0.8); backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid rgba(157, 78, 221, 0.1); }
+        .logo { font-size: 28px; font-weight: 900; letter-spacing: 5px; text-shadow: 0 0 10px var(--neon-blue); }
+        nav a { color: var(--text-gray); text-decoration: none; margin-left: 30px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--neon-blue); text-shadow: 0 0 8px var(--neon-blue); }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 80px; font-weight: 900; letter-spacing: 15px; margin-bottom: 10px; text-shadow: 0 0 20px var(--neon-purple); }
+        .hero p { font-size: 18px; letter-spacing: 4px; color: var(--neon-blue); text-transform: uppercase; margin-bottom: 40px; }
+        .btn { display: inline-block; padding: 15px 40px; border: 2px solid var(--neon-blue); color: #fff; text-decoration: none; letter-spacing: 3px; text-transform: uppercase; font-size: 12px; font-weight: bold; border-radius: 50px; transition: 0.4s; box-shadow: 0 0 15px rgba(0, 210, 255, 0.2); cursor: pointer; background: none; }
+        .btn:hover { background: var(--neon-blue); color: var(--space-black); box-shadow: 0 0 25px var(--neon-blue); transform: translateY(-2px); }
+        section { padding: 100px 10%; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .section-title { font-size: 32px; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 50px; text-align: center; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 2px; background: var(--neon-blue); margin: 15px auto 0; box-shadow: 0 0 8px var(--neon-blue); }
+        .about-text { max-width: 800px; margin: 0 auto; text-align: center; font-size: 18px; line-height: 1.8; color: var(--text-gray); font-style: italic; }
+        .media-container { display: flex; justify-content: center; margin-top: 30px; width: 100%; }
+        .player-wrapper { width: 100%; max-width: 800px; border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(157, 78, 221, 0.2); border: 1px solid rgba(157, 78, 221, 0.3); }
+        .epk-grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .epk-card { background: rgba(157, 78, 221, 0.05); border: 1px solid rgba(157, 78, 221, 0.2); padding: 30px; border-radius: 8px; text-align: center; width: 250px; transition: 0.3s; }
+        .epk-card:hover { border-color: var(--neon-purple); box-shadow: 0 0 15px rgba(157, 78, 221, 0.2); transform: translateY(-3px); }
+        .epk-card h3 { font-size: 16px; letter-spacing: 2px; margin-bottom: 20px; }
+        .booking-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+        .booking-form input, .booking-form textarea { width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50px; color: #fff; outline: none; transition: 0.3s; }
+        .booking-form textarea { border-radius: 15px; height: 120px; resize: none; }
+        .booking-form input:focus, .booking-form textarea:focus { border-color: var(--neon-blue); box-shadow: 0 0 10px rgba(0, 210, 255, 0.2); }
+        footer { padding: 40px; text-align: center; color: rgba(255,255,255,0.3); font-size: 12px; letter-spacing: 2px; }
+        @media (max-width: 768px) { header { padding: 20px; } nav { display: none; } .hero h1 { font-size: 45px; letter-spacing: 8px; } .hero p { font-size: 14px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">GROX</div>
+        <nav><a href="#about">About</a><a href="#music">Music</a><a href="#epk">EPK</a><a href="#booking">Booking</a></nav>
+    </header>
+    <div class="hero">
+        <h1>GROX</h1>
+        <p>The Sound of the Next Era</p>
+        <a href="#music" class="btn">Listen Spectrum of Tomorrow</a>
+    </div>
+    <section id="about">
+        <h2 class="section-title">Манифест</h2>
+        <div class="about-text">
+            «Мы смотрим на ночное небо и видим бесконечную пустоту. Но музыка доказывает обратное. Звук — это невидимая нить, которая связывает наши сердца, преодолевая световые года. Когда тысячи людей на стадионе закрывают глаза и поднимают руки к небу в едином порыве, расстояние между нами исчезает. Мы перестаем быть просто точками на карте. Мы становимся созвездием...»
+        </div>
+    </section>
+    <section id="music">
+        <h2 class="section-title">Релизы & Миксы</h2>
+        <div class="media-container">
+            <div class="player-wrapper">
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://soundcloud.com"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="epk">
+        <h2 class="section-title">Press Kit (EPK)</h2>
+        <div class="epk-grid">
+            <div class="epk-card">
+                <h3>Биография / Rider</h3>
+                <a href="#" class="btn" style="padding: 10px 20px; font-size: 10px;">Скачать ZIP</a>
+            </div>
+            <div class="epk-card">
+                <h3>Промо-фото</h3>
+                <a href="#" class="btn" style="padding: 10px 20px; font-size: 10px;">Скачать HQ</a>
+            </div>
+        </div>
+    </section>
+    <section id="booking">
+        <h2 class="section-title">Booking & Contacts</h2>
+        <form class="booking-form" action="https://formspree.io" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя / Организация" required>
+            <input type="email" name="email" placeholder="Ваш Email" required>
+            <textarea name="message" placeholder="Детали мероприятия (Дата, Город, Клуб)" required></textarea>
+            <button type="submit" class="btn">Отправить запрос</button>
+        </form>
+    </section>
+    <footer><p>&copy; 2026 GROX.SPACE. ALL RIGHTS RESERVED.</p></footer>
+</body>
+</html>
